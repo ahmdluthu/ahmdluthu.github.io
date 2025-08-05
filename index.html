@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Muhammed Luthufulla C | Digital Marketer & Islamic Scholar</title>
+  <style>
+    :root {
+      --main-color: #0e6b56;
+      --accent-color: #a4d4ae;
+      --text-color: #333;
+      --bg-color: #f5f9f6;
+      --font: 'Segoe UI', sans-serif;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: var(--font);
+      background-color: var(--bg-color);
+      color: var(--text-color);
+      line-height: 1.6;
+      scroll-behavior: smooth;
+    }
+
+    header {
+      background-color: var(--main-color);
+      color: white;
+      padding: 2rem 1rem;
+      text-align: center;
+    }
+
+    header h1 {
+      font-size: 2.5rem;
+      margin-bottom: 0.5rem;
+    }
+
+    header p {
+      font-size: 1.2rem;
+      font-style: italic;
+      opacity: 0.9;
+    }
+
+    .container {
+      max-width: 1000px;
+      margin: 2rem auto;
+      padding: 1rem;
+    }
+
+    .card {
+      background: white;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+      padding: 2rem;
+      margin-bottom: 2rem;
+      transition: transform 0.3s;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+    }
+
+    h2 {
+      color: var(--main-color);
+      margin-bottom: 1rem;
+    }
+
+    .contact a {
+      color: var(--main-color);
+      text-decoration: none;
+      display: block;
+      margin-bottom: 0.5rem;
+    }
+
+    .socials a {
+      display: inline-block;
+      margin-right: 10px;
+      text-decoration: none;
+      color: white;
+      padding: 0.5rem 1rem;
+      border-radius: 20px;
+      font-weight: bold;
+      transition: background 0.3s ease;
+    }
+
+    .socials a.instagram {
+      background: #e1306c;
+    }
+
+    .socials a.instagram:hover {
+      background: #c82361;
+    }
+
+    .socials a.facebook {
+      background: #3b5998;
+    }
+
+    .socials a.facebook:hover {
+      background: #2d4373;
+    }
+
+    footer {
+      text-align: center;
+      padding: 1rem;
+      font-size: 0.9rem;
+      color: #777;
+    }
+
+    /* Smooth fade-in animation */
+    .fade-in {
+      opacity: 0;
+      transform: translateY(20px);
+      transition: all 0.6s ease;
+    }
+
+    .fade-in.visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    @media (max-width: 600px) {
+      header h1 {
+        font-size: 2rem;
+      }
+
+      .socials a {
+        margin-bottom: 0.5rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Muhammed Luthufulla C</h1>
+    <p>Digital Marketing Expert & Islamic Scholar</p>
+  </header>
+
+  <div class="container">
+    <div class="card fade-in">
+      <h2>About Me</h2>
+      <p>
+        I am a dedicated digital marketing expert with experience in both online and offline platforms. 
+        My mission is to help businesses grow with smart marketing strategies, while staying grounded in values shaped by my background as an Islamic scholar.
+      </p>
+    </div>
+
+    <div class="card fade-in">
+      <h2>Contact</h2>
+      <div class="contact">
+        <a href="tel:+918129650313">📞 +91 81296 50313</a>
+        <a href="mailto:ahmdluthu710@gmail.com">✉️ ahmdluthu710@gmail.com</a>
+      </div>
+    </div>
+
+    <div class="card fade-in">
+      <h2>Social Media</h2>
+      <div class="socials">
+        <a href="https://www.instagram.com/digi_mlc?igsh=Y2ZvZHhqcnpzem9l" class="instagram" target="_blank">Instagram</a>
+        <a href="https://www.facebook.com/share/1Bi3zPSHue/" class="facebook" target="_blank">Facebook</a>
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    © 2025 Muhammed Luthufulla C. All rights reserved.
+  </footer>
+
+  <script>
+    // Fade-in on scroll
+    const faders = document.querySelectorAll('.fade-in');
+
+    const appearOptions = {
+      threshold: 0.1,
+      rootMargin: '0px 0px -50px 0px'
+    };
+
+    const appearOnScroll = new IntersectionObserver((entries, observer) => {
+      entries.forEach(entry => {
+        if (!entry.isIntersecting) return;
+        entry.target.classList.add('visible');
+        observer.unobserve(entry.target);
+      });
+    }, appearOptions);
+
+    faders.forEach(fader => {
+      appearOnScroll.observe(fader);
+    });
+  </script>
+</body>
+</html>
