@@ -1,374 +1,281 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Muhammed Luthufulla C | Digital Marketer & Islamic Scholar</title>
-    <style>
-        /* Minimal CSS Reset */
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-        
-        body {
-            font-family: 'Helvetica Neue', Arial, sans-serif;
-            line-height: 1.6;
-            color: #333;
-            background-color: #f9f9f9;
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 0 20px;
-        }
-        
-        /* Navigation */
-        nav {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            padding: 2rem 0;
-            border-bottom: 1px solid #eee;
-            margin-bottom: 3rem;
-        }
-        
-        .logo {
-            font-size: 1.5rem;
-            font-weight: 700;
-            color: #222;
-            text-decoration: none;
-        }
-        
-        .nav-links {
-            display: flex;
-            gap: 2rem;
-        }
-        
-        .nav-links a {
-            text-decoration: none;
-            color: #555;
-            font-weight: 500;
-            transition: color 0.3s;
-        }
-        
-        .nav-links a:hover {
-            color: #000;
-        }
-        
-        /* Page Content */
-        .page {
-            min-height: 70vh;
-            padding: 2rem 0;
-            opacity: 0;
-            transform: translateY(20px);
-            animation: fadeIn 0.5s forwards;
-        }
-        
-        @keyframes fadeIn {
-            to {
-                opacity: 1;
-                transform: translateY(0);
-            }
-        }
-        
-        h1 {
-            font-size: 2.5rem;
-            margin-bottom: 1.5rem;
-            font-weight: 700;
-        }
-        
-        h2 {
-            font-size: 1.8rem;
-            margin-bottom: 1rem;
-            font-weight: 600;
-        }
-        
-        p {
-            margin-bottom: 1.5rem;
-            color: #666;
-        }
-        
-        /* Home Page */
-        .hero {
-            text-align: center;
-            padding: 4rem 0;
-        }
-        
-        .hero h1 {
-            font-size: 3rem;
-            margin-bottom: 1rem;
-        }
-        
-        .hero p {
-            font-size: 1.2rem;
-            max-width: 700px;
-            margin: 0 auto 2rem;
-        }
-        
-        .profile-image {
-            width: 150px;
-            height: 150px;
-            border-radius: 50%;
-            object-fit: cover;
-            margin-bottom: 2rem;
-            border: 3px solid #fff;
-            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
-        }
-        
-        /* About Page */
-        .about-content {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 3rem;
-            align-items: center;
-        }
-        
-        @media (max-width: 768px) {
-            .about-content {
-                grid-template-columns: 1fr;
-            }
-        }
-        
-        /* Services Page */
-        .services-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 2rem;
-            margin-top: 3rem;
-        }
-        
-        .service-card {
-            background: #fff;
-            padding: 2rem;
-            border-radius: 8px;
-            box-shadow: 0 5px 15px rgba(0,0,0,0.05);
-            transition: transform 0.3s, box-shadow 0.3s;
-        }
-        
-        .service-card:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 10px 25px rgba(0,0,0,0.1);
-        }
-        
-        .service-card h3 {
-            margin-bottom: 1rem;
-            font-size: 1.3rem;
-        }
-        
-        /* Contact Page */
-        .contact-info {
-            margin-top: 2rem;
-        }
-        
-        .contact-item {
-            display: flex;
-            align-items: center;
-            margin-bottom: 1rem;
-        }
-        
-        .contact-item i {
-            margin-right: 1rem;
-            width: 30px;
-            text-align: center;
-        }
-        
-        .social-links {
-            display: flex;
-            gap: 1rem;
-            margin-top: 2rem;
-        }
-        
-        .social-links a {
-            display: inline-flex;
-            align-items: center;
-            justify-content: center;
-            width: 40px;
-            height: 40px;
-            background: #f0f0f0;
-            border-radius: 50%;
-            color: #333;
-            transition: all 0.3s;
-            text-decoration: none;
-        }
-        
-        .social-links a:hover {
-            background: #333;
-            color: #fff;
-        }
-        
-        /* Footer */
-        footer {
-            text-align: center;
-            padding: 3rem 0;
-            margin-top: 3rem;
-            border-top: 1px solid #eee;
-            color: #888;
-        }
-        
-        /* Utility Classes */
-        .hidden {
-            display: none;
-        }
-        
-        .btn {
-            display: inline-block;
-            padding: 0.8rem 1.5rem;
-            background: #333;
-            color: #fff;
-            border-radius: 4px;
-            text-decoration: none;
-            font-weight: 500;
-            transition: background 0.3s;
-        }
-        
-        .btn:hover {
-            background: #555;
-        }
-        
-        .text-center {
-            text-align: center;
-        }
-        
-        .mt-3 {
-            margin-top: 3rem;
-        }
-    </style>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Muhammed Luthufulla C | Digital Marketer & Islamic Scholar</title>
+  <style>
+    :root {
+      --primary: #0e6b56;
+      --secondary: #e6f4ec;
+      --light: #f9fcfb;
+      --dark: #222;
+      --accent: #a4d4ae;
+      --font: 'Segoe UI', sans-serif;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: var(--font);
+      background: var(--light);
+      color: var(--dark);
+      scroll-behavior: smooth;
+    }
+
+    nav {
+      background: var(--primary);
+      padding: 1rem;
+      position: sticky;
+      top: 0;
+      z-index: 999;
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin: 0.5rem 1rem;
+      font-weight: 600;
+      transition: 0.3s;
+    }
+
+    nav a:hover {
+      color: var(--accent);
+    }
+
+    header {
+      background: var(--primary);
+      color: white;
+      text-align: center;
+      padding: 4rem 2rem;
+    }
+
+    header h1 {
+      font-size: 2.8rem;
+    }
+
+    header p {
+      font-size: 1.2rem;
+      margin-top: 0.5rem;
+      opacity: 0.9;
+    }
+
+    section {
+      padding: 4rem 2rem;
+      max-width: 1000px;
+      margin: auto;
+    }
+
+    h2 {
+      font-size: 2rem;
+      color: var(--primary);
+      margin-bottom: 1rem;
+    }
+
+    p {
+      line-height: 1.8;
+      margin-bottom: 1rem;
+    }
+
+    .card {
+      background: white;
+      border-radius: 12px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+      padding: 2rem;
+      margin-bottom: 2rem;
+    }
+
+    ul {
+      list-style: none;
+      padding-left: 1rem;
+    }
+
+    ul li::before {
+      content: "✓ ";
+      color: var(--primary);
+    }
+
+    .social a {
+      display: inline-block;
+      margin-right: 10px;
+      margin-top: 10px;
+      padding: 0.5rem 1rem;
+      border-radius: 25px;
+      color: white;
+      font-weight: bold;
+      text-decoration: none;
+    }
+
+    .social .instagram {
+      background: #e1306c;
+    }
+
+    .social .facebook {
+      background: #3b5998;
+    }
+
+    .contact a {
+      display: block;
+      color: var(--primary);
+      font-weight: bold;
+      text-decoration: none;
+      margin-bottom: 0.5rem;
+    }
+
+    footer {
+      text-align: center;
+      padding: 2rem;
+      background: var(--secondary);
+      color: #444;
+      font-size: 0.9rem;
+    }
+
+    .fade-in {
+      opacity: 0;
+      transform: translateY(30px);
+      transition: all 0.6s ease-out;
+    }
+
+    .fade-in.visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    @media (max-width: 600px) {
+      header h1 {
+        font-size: 2rem;
+      }
+
+      nav {
+        flex-direction: column;
+      }
+
+      nav a {
+        margin: 0.5rem;
+      }
+    }
+  </style>
 </head>
 <body>
-    <nav>
-        <a href="#" class="logo" onclick="showPage('home')">MLC</a>
-        <div class="nav-links">
-            <a href="#" onclick="showPage('home')">Home</a>
-            <a href="#" onclick="showPage('about')">About</a>
-            <a href="#" onclick="showPage('services')">Services</a>
-            <a href="#" onclick="showPage('contact')">Contact</a>
-        </div>
-    </nav>
 
-    <!-- Home Page -->
-    <div id="home-page" class="page">
-        <section class="hero">
-            <img src="https://via.placeholder.com/150" alt="Muhammed Luthufulla C" class="profile-image">
-            <h1>Muhammed Luthufulla C</h1>
-            <p>Digital Marketing Expert | Islamic Scholar</p>
-            <p>Bridging the digital world with traditional Islamic values</p>
-            <a href="#" class="btn mt-3" onclick="showPage('contact')">Get In Touch</a>
-        </section>
+  <!-- Navigation -->
+  <nav>
+    <a href="#home">Home</a>
+    <a href="#about">About</a>
+    <a href="#services">Services</a>
+    <a href="#portfolio">Portfolio</a>
+    <a href="#islamic">Islamic Work</a>
+    <a href="#contact">Contact</a>
+    <a href="#social">Social</a>
+  </nav>
+
+  <!-- Home -->
+  <header id="home">
+    <h1>Muhammed Luthufulla C</h1>
+    <p>Digital Marketer | Islamic Scholar | Consultant</p>
+  </header>
+
+  <!-- About -->
+  <section id="about" class="fade-in">
+    <div class="card">
+      <h2>About Me</h2>
+      <p>I am a digital marketing expert with strong roots in both online and offline strategy. I’ve helped individuals, businesses, and organizations enhance their digital presence and grow their brand identity through thoughtful and impactful campaigns.</p>
+      <p>Along with my professional work, I am an Islamic scholar with a passion for sharing authentic Islamic knowledge and values. I work to bring together modern strategy and spiritual depth in everything I do.</p>
     </div>
+  </section>
 
-    <!-- About Page -->
-    <div id="about-page" class="page hidden">
-        <h1>About Me</h1>
-        <div class="about-content">
-            <div>
-                <h2>Digital Marketer & Islamic Scholar</h2>
-                <p>I am Muhammed Luthufulla C, a professional digital marketer with expertise in both online and offline marketing strategies. With years of experience in the field, I help businesses grow their digital presence and reach their target audience effectively.</p>
-                <p>Alongside my professional career, I am deeply involved in Islamic studies and scholarship. I believe in integrating ethical values with modern digital practices to create meaningful impact.</p>
-                <p>My approach combines technical marketing skills with the wisdom of Islamic teachings, offering a unique perspective in the digital marketing landscape.</p>
-            </div>
-            <div>
-                <img src="https://via.placeholder.com/500x400" alt="About Muhammed Luthufulla C" style="width:100%; border-radius:8px;">
-            </div>
-        </div>
+  <!-- Services -->
+  <section id="services" class="fade-in">
+    <div class="card">
+      <h2>Services</h2>
+      <ul>
+        <li>Social Media Marketing (Instagram, Facebook, WhatsApp)</li>
+        <li>Search Engine Optimization (SEO)</li>
+        <li>Offline Branding & Campaigns</li>
+        <li>Islamic Educational Programs & Lectures</li>
+        <li>Business Strategy Consultation</li>
+        <li>Personal Branding</li>
+      </ul>
     </div>
+  </section>
 
-    <!-- Services Page -->
-    <div id="services-page" class="page hidden">
-        <h1>My Services</h1>
-        <p>Comprehensive digital marketing solutions tailored to your business needs.</p>
-        
-        <div class="services-grid">
-            <div class="service-card">
-                <h3>Social Media Marketing</h3>
-                <p>Strategic social media campaigns to boost your brand presence across platforms like Instagram, Facebook, and more.</p>
-            </div>
-            <div class="service-card">
-                <h3>Search Engine Optimization</h3>
-                <p>Improve your website's visibility and ranking on search engines to attract more organic traffic.</p>
-            </div>
-            <div class="service-card">
-                <h3>Content Marketing</h3>
-                <p>Engaging content creation that resonates with your audience and drives conversions.</p>
-            </div>
-            <div class="service-card">
-                <h3>Email Marketing</h3>
-                <p>Targeted email campaigns to nurture leads and maintain customer relationships.</p>
-            </div>
-            <div class="service-card">
-                <h3>Islamic Content Strategy</h3>
-                <p>Specialized marketing solutions for Islamic organizations and businesses.</p>
-            </div>
-            <div class="service-card">
-                <h3>Offline Marketing</h3>
-                <p>Traditional marketing strategies integrated with digital approaches for comprehensive coverage.</p>
-            </div>
-        </div>
+  <!-- Portfolio -->
+  <section id="portfolio" class="fade-in">
+    <div class="card">
+      <h2>Portfolio</h2>
+      <p>Here are a few examples of projects I've worked on:</p>
+      <ul>
+        <li>📱 Marketing Strategy for a local clothing brand</li>
+        <li>🕌 Branding & design for Islamic centers</li>
+        <li>🎯 Social media growth for small business owners</li>
+        <li>💼 Offline event marketing for seminars and conferences</li>
+      </ul>
     </div>
+  </section>
 
-    <!-- Contact Page -->
-    <div id="contact-page" class="page hidden">
-        <h1>Get In Touch</h1>
-        <p>Feel free to reach out for collaborations, consultations, or any inquiries.</p>
-        
-        <div class="contact-info">
-            <div class="contact-item">
-                <i class="fas fa-phone"></i>
-                <span>+91 8129650313</span>
-            </div>
-            <div class="contact-item">
-                <i class="fas fa-envelope"></i>
-                <span>ahmdluthu710@gmail.com</span>
-            </div>
-            
-            <div class="social-links">
-                <a href="https://www.instagram.com/digi_mlc?igsh=Y2ZvZHhqcnpzem9l" target="_blank" title="Instagram">
-                    <i class="fab fa-instagram"></i>
-                </a>
-                <a href="https://www.facebook.com/share/1Bi3zPSHue/" target="_blank" title="Facebook">
-                    <i class="fab fa-facebook-f"></i>
-                </a>
-            </div>
-        </div>
+  <!-- Islamic Work -->
+  <section id="islamic" class="fade-in">
+    <div class="card">
+      <h2>Islamic Work</h2>
+      <p>I actively participate in the Islamic scholarly community by conducting religious classes, giving public talks, and providing Islamic counseling. My aim is to spread beneficial knowledge in a respectful, simple, and practical way.</p>
+      <ul>
+        <li>📖 Tafsir classes & youth sessions</li>
+        <li>🗣 Public speaking at Islamic events</li>
+        <li>🕋 Online Islamic awareness content creation</li>
+      </ul>
     </div>
+  </section>
 
-    <footer>
-        <p>&copy; 2023 Muhammed Luthufulla C. All rights reserved.</p>
-    </footer>
+  <!-- Contact -->
+  <section id="contact" class="fade-in">
+    <div class="card">
+      <h2>Contact</h2>
+      <p>You can reach me through the following methods:</p>
+      <div class="contact">
+        <a href="tel:+918129650313">📞 +91 81296 50313</a>
+        <a href="mailto:ahmdluthu710@gmail.com">✉️ ahmdluthu710@gmail.com</a>
+      </div>
+    </div>
+  </section>
 
-    <script>
-        // Show the specified page and hide others
-        function showPage(pageId) {
-            // Hide all pages
-            document.querySelectorAll('.page').forEach(page => {
-                page.classList.add('hidden');
-            });
-            
-            // Show the requested page
-            document.getElementById(`${pageId}-page`).classList.remove('hidden');
-            
-            // Scroll to top
-            window.scrollTo(0, 0);
-            
-            // Update URL without reload
-            history.pushState(null, null, `#${pageId}`);
+  <!-- Social Media -->
+  <section id="social" class="fade-in">
+    <div class="card">
+      <h2>Social Media</h2>
+      <div class="social">
+        <a class="instagram" href="https://www.instagram.com/digi_mlc?igsh=Y2ZvZHhqcnpzem9l" target="_blank">Instagram</a>
+        <a class="facebook" href="https://www.facebook.com/share/1Bi3zPSHue/" target="_blank">Facebook</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    © 2025 Muhammed Luthufulla C. Built with vision, strategy & faith.
+  </footer>
+
+  <!-- JS for Animation -->
+  <script>
+    const sections = document.querySelectorAll('.fade-in');
+
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+          observer.unobserve(entry.target);
         }
-        
-        // Check URL hash on load
-        window.addEventListener('load', function() {
-            const hash = window.location.hash.substring(1);
-            if (hash) {
-                showPage(hash);
-            } else {
-                showPage('home');
-            }
-        });
-        
-        // Handle back/forward navigation
-        window.addEventListener('popstate', function() {
-            const hash = window.location.hash.substring(1);
-            showPage(hash || 'home');
-        });
-    </script>
+      });
+    }, { threshold: 0.1 });
+
+    sections.forEach(section => observer.observe(section));
+  </script>
+
 </body>
 </html>
